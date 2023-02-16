@@ -29,7 +29,7 @@ class FigureCalculator {
       return this.mathBasic.multiply(length, width);
    }
 
-   calculteTrianglePerimeter(...args) {
+   calculateTrianglePerimeter(...args) {
       const [ sideA, sideB, base ] = this._verifyArgs(args, 3);
 
       return this.mathBasic.add(this.mathBasic.add(sideA, sideB), base);

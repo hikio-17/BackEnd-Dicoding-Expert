@@ -1,0 +1,17 @@
+const createServer = require('./createServer');
+const MathBasic = require('./MathBasic');
+const FigureCalculator = require('./FigureCalculator');
+
+const server = async () => {
+   const figureCalculator = new FigureCalculator(MathBasic);
+
+   const server = createServer({
+      mathBasic: MathBasic,
+      figureCalculator,
+   });
+
+   await server.start();
+   console.log(`Server start at ${server.info.uri}`);
+}
+
+server();
