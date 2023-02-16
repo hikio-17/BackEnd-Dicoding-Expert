@@ -193,5 +193,4 @@ describe('A HTPP Server', () => {
          expect(spyDivide).toBeCalledWith(100, 2);
       });
    });
-
 });
